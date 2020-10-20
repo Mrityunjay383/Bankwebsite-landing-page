@@ -1,0 +1,192 @@
+@media screen and (max-width: 991px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .cta-btn {
+    display: none;
+  }
+
+  .nav-lin {
+    position: absolute;
+    z-index: 1;
+    height: 46vh;
+    top: 12vh;
+    right: 27vh;
+    left: 27vh;
+    margin: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 1px rgb(152, 151, 151) solid;
+    display: none;
+  }
+
+  .nav-ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .nav-lin a {
+    font-size: 18px;
+  }
+
+  .nav-lin li {
+    opacity: 0;
+  }
+
+  .icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .title-contant h1 {
+    font-size: 3rem;
+  }
+
+  .title-contant p {
+    font-size: 1rem;
+  }
+
+  .des-img-container {
+    display: none;
+  }
+
+  .mob-img-container {
+    display: block;
+  }
+
+  .artical-img {
+    width: 80%;
+  }
+
+  .footer {
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link1, .link2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .nav-lin {
+    left: 7vh;
+    right: 7vh;
+  }
+
+  .title-contant h1, .title-contant p, .feature-head p, .feat-card p, .writer-name, .artical-card p, .artical-card h4 {
+    margin: auto;
+  }
+
+  .title-contant h1 {
+    width: 100%;
+    font-size: 2.8rem;
+  }
+
+  .title-contant p {
+    font-size: 0.9rem;
+  }
+
+  .feature-head h2 {
+    padding-top: 3rem;
+    font-size: 2.1rem;
+  }
+
+  .feature-head p, .feat-card p {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .nav-lin {
+    left: 2vh;
+    right: 2vh;
+  }
+
+  .title-contant h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 0 5px;
+  }
+
+  .title-contant p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .feature-head h2 {
+    font-size: 1.8rem;
+  }
+
+  .feat-card h3 {
+    font-size: 1.7rem;
+  }
+
+  .feature-head p, .feat-card p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .artical-card h4, .artical-card p {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+/*Used to animate slider navbar*/
+.icon-active {
+  display: flex;
+}
+
+/*Used to animate small navbar links*/
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*Used to animate top icon*/
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 1px);
+}
+
+.toggle .line2 {
+  display: none;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -1px);
+}
